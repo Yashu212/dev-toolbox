@@ -20,7 +20,7 @@ const Sidebar = ({
   setSelectedTool,
 }: {
   selectedTool: string;
-  setSelectedTool: React.Dispatch<React.SetStateAction<"regex" | "json" | "markdown" | "jwt" | string>>;
+  setSelectedTool: (tool: "regex" | "json" | "markdown" | "jwt") => void;
 }) => {
   return (
     <div className="w-64 bg-muted p-4 border-r border-border space-y-4 flex flex-col">
@@ -33,7 +33,7 @@ const Sidebar = ({
           return (
             <button
               key={tool.id}
-              onClick={() => setSelectedTool(tool.id)}
+              onClick={() => setSelectedTool(tool.id as "regex" | "json" | "markdown" | "jwt")}
               className={cn(
                 "group flex items-center gap-3 w-full text-left px-3 py-2 rounded-md transition-colors duration-200",
                 selectedTool === tool.id
