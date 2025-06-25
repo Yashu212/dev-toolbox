@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+# 🧰 Dev Toolbox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dev Toolbox** is a simple, intuitive web application designed to provide essential utilities for developers in a single, convenient place. It features a collection of tools to assist with common development tasks, from testing regular expressions to formatting JSON and decoding JWT tokens.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Regex Tester**: Test and validate regular expressions against sample text.
+- **JSON Formatter / Validator**: Format and validate JSON data for readability and correctness.
+- **Markdown Previewer**: Write and preview Markdown in real-time.
+- **JWT Decoder**: Decode JSON Web Tokens to inspect their header and payload.
+- **Dark Mode Toggle**: Switch between light and dark themes for a comfortable viewing experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Technologies Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project is built using modern web technologies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** – A JavaScript library for building user interfaces.
+- **TypeScript** – A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS** – A utility-first CSS framework for rapidly building custom designs.
+- **Monaco Editor** – The code editor that powers VS Code, integrated for code editing experiences.
+- **Lucide React** – A collection of beautiful and customizable open-source icons.
+- **React Markdown** – A Markdown component for React.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## ⚙️ Setup and Installation
+
+To get the Dev Toolbox running on your local machine, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Yashu212/dev-toolbox.git
+   cd dev-toolbox
+   ```
+2. **Install dependencies:**
+    ```bash
+    npm install
+    #or
+    yarn install
+    ```
+3. ***Start the development server:***
+    ```bash
+    npm start
+    #or
+    yarn start
+    ```
+    The application should now be running at **http://localhost:3000** (or another port if 3000 is occupied).
+
+## 💡 Usage
+Navigate through the different tools using the sidebar on the left. Each tool provides input areas and an "Execute" button to process the input and display the output. The Dark Mode toggle is available in the top-right corner to switch themes.
+
+## 🤝 Contributing
+Contributions are welcome! If you have suggestions for new tools, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+## 👨‍💻 Author
+
+Built by **Yash Shukla** .
+
