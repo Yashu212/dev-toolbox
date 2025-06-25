@@ -20,7 +20,7 @@ const Sidebar = ({
   setSelectedTool,
 }: {
   selectedTool: string;
-  setSelectedTool: React.Dispatch<React.SetStateAction<"regex" | "json" | "markdown" | "jwt">>;
+  setSelectedTool: React.Dispatch<React.SetStateAction<"regex" | "json" | "markdown" | "jwt" | string>>;
 }) => {
   return (
     <div className="w-64 bg-muted p-4 border-r border-border space-y-4 flex flex-col">
